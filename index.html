@@ -1287,17 +1287,145 @@ body{font-family:Arial,sans-serif}
   .footer-col ul li a:hover { color: var(--caramel-light); }
   .footer-bottom { border-top: 1px solid rgba(255,255,255,0.08); padding-top: 1.5rem; text-align: center; font-size: 0.8rem; opacity: 0.6; }
 
-  /* RESPONSIVE */
-  @media (max-width: 900px) {
-    .cat-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  /* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width: 1024px){
+
+  .about-grid,
+  .contact-grid,
+  .contact-right,
+  .footer-grid{
+      grid-template-columns:1fr;
+      gap:30px;
+  }
+
+  .flavours-grid{
+      grid-template-columns:repeat(2,1fr);
+  }
+
+  .steps{
+      grid-template-columns:repeat(2,1fr);
+  }
+
+  .testi-grid{
+      flex-wrap:wrap;
+      justify-content:center;
+  }
+
 }
 
-@media (max-width: 600px) {
-    .cat-grid {
-        grid-template-columns: 1fr;
-    }
+@media (max-width:768px){
+
+  section{
+      padding:70px 20px;
+  }
+
+  nav{
+      padding:0 20px;
+  }
+
+  .topbar{
+      padding:10px 20px;
+      flex-direction:column;
+      gap:5px;
+      text-align:center;
+  }
+
+  .hero{
+      height:auto;
+      min-height:100vh;
+      padding:140px 20px 70px;
+  }
+
+  .hero h1{
+      font-size:52px;
+  }
+
+  .hero p{
+      font-size:18px;
+  }
+
+  .hero-buttons{
+      flex-direction:column;
+      width:100%;
+  }
+
+  .btn-primary,
+  .btn-secondary{
+      width:100%;
+      text-align:center;
+  }
+
+  .about-grid{
+      grid-template-columns:1fr;
+  }
+
+  .about-img-single{
+      max-width:100%;
+      margin:auto;
+  }
+
+  .flavours-grid{
+      grid-template-columns:1fr;
+  }
+
+  .steps{
+      grid-template-columns:1fr;
+  }
+
+  .contact-right{
+      grid-template-columns:1fr;
+  }
+
+  .stats-bar{
+      flex-direction:column;
+  }
+
+  .stat-item{
+      border-right:none;
+      border-bottom:1px solid rgba(255,255,255,.2);
+  }
+
+  .swiper{
+      padding:10px 40px 50px;
+  }
+
+  .product-card img{
+      height:220px;
+  }
+
+}
+
+@media (max-width:480px){
+
+  .hero h1{
+      font-size:42px;
+  }
+
+  .hero p{
+      font-size:16px;
+  }
+
+  .section-title{
+      font-size:2rem;
+  }
+
+  .cake-title{
+      font-size:26px;
+  }
+
+  .product-card img{
+      height:200px;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev{
+      width:38px !important;
+      height:38px !important;
+  }
+
 }
   
     .cat-grid { grid-template-columns: repeat(4, 1fr); }
